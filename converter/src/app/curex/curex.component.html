@@ -1,0 +1,47 @@
+<div class="curex-page">
+  <div class="exchange">
+    <div class="cur1">
+      <input
+        type="number"
+        #input1
+        placeholder="Enter the amount and select the currency please"
+        class="currencyinput"
+        (input)="calculate1(input1.value)"
+        [value]="inputValue1"
+      />
+      <select
+        #cur1
+        (change)="
+          selected1(cur1.value);
+          calculate2(input2.value)
+        "
+      >
+        <option *ngFor="let key of allKeys">
+          {{ key }}
+        </option>
+      </select>
+    </div>
+
+    <div class="cur2">
+      <input
+        type="number"
+        #input2
+        placeholder="Enter the amount and select the currency please"
+        class="currencyinput"
+        (input)="calculate2(input2.value)"
+        [value]="inputValue2"
+      />
+      <select
+        #cur2
+        (change)="
+          selected2(cur2.value);
+          calculate1(input1.value)
+        "
+      >
+        <option *ngFor="let key of allKeys">
+          {{ key }}
+        </option>
+      </select>
+    </div>
+  </div>
+</div>

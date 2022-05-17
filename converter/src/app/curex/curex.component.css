@@ -1,0 +1,59 @@
+.curex-page {
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.exchange {
+  width: 1000px;
+  height: 350px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 35px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.cur1,
+.cur2 {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.currencyinput {
+  width: 80%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  transition: 0.3s;
+}
+.currencyinput:focus {
+  transform: scale(1.02);
+}
+select {
+  width: 16%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  font-size: 24px;
+}
+input::selection {
+  background-color: rgb(222, 222, 222);
+}
+input::placeholder {
+  font-style: italic;
+  color: rgb(222, 222, 222);
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

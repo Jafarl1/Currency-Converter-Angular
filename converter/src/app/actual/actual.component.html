@@ -1,0 +1,21 @@
+<div class="actual-back">
+  <div class="actual">
+    <div class="rate">
+      <div class="usduah">
+        <img src="assets/images/usd.png" alt="usduah" style="height: 100%" />
+        <input type="text" class="usdactual" disabled value="{{ UsdUah }}" />
+      </div>
+      <div class="euruah">
+        <img src="assets/images/euro.png" alt="euruah" style="height: 100%" />
+        <input type="text" class="euractual" disabled value="{{ EurUah }}" />
+      </div>
+      <div class="date">
+        {{ currentDate | date: "dd MMM yyy" }}
+      </div>
+    </div>
+    <div class="header">
+      <h1>Online currency converter</h1>
+    </div>
+    <div class="flag"></div>
+  </div>
+</div>
